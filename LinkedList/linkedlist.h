@@ -24,6 +24,7 @@ class LinkedList {
         void get_list_length();
         Node* get_list_head();
         void insert_node(int data, int index);
+        void delete_node(int index);
 };
 
 

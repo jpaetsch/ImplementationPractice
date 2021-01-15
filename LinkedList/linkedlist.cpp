@@ -61,7 +61,8 @@ void LinkedList::print_entire_list(Node *theHead) {
 }
 
 
-// TODO create insert after certain node, delete certain node functions
+// Insert a node at the given spot (index like an array, with 0 being the head)
+// Included error checking/handling if the given index doesn't exist, etc.
 void LinkedList::insert_node(int data, int index) {
     Node *newN = new Node;
     newN->nodeData = data;
@@ -92,22 +93,63 @@ void LinkedList::insert_node(int data, int index) {
             newN->nextNode = current->nextNode;
             current->nextNode = newN;
         }
+    }  
+}
 
+
+// Delete a node at the given spot (index like an array, with 0 being the head)
+// Included error checking/handling if the provided index doesn't exist, etc.
+void LinkedList::delete_node(int index) {
+    if(head == NULL) {
+        cout << "[No Deletion Warning] - no items in list, nothing deleted" << endl;
+    } else if(index == 0) { 
+        if(head == tail) {  // if there is only one list element delete both head and tail
+            head = NULL;
+            tail = NULL;
+        } else {
+            Node *temp = head;
+            head = temp->nextNode;
+            delete temp;
+        }
+    } else {
+        Node *temp = head;
+        bool outsideRange = false;
+        for(int i = 1; i < index; ++i) {
+            if(temp == NULL) {
+                outsideRange = true;
+                break;
+            }
+            temp = temp->nextNode;
+        }
+
+        if(outsideRange) { // Given index is too large and doesn't exist in the current list
+            cout << "[No Deletion Warning] - index provided doesn't exist" << endl;
+        } else { // Delete the requested node after reassinging the pointers
+            Node *deleteMe = temp->nextNode;
+            temp->nextNode = deleteMe->nextNode;                                         
+            delete deleteMe;
+        }
     }
-        
 }
 
 
 // Linked List class implementation example with creation, insertion, deletion, and printing functionality
 int main() {
     LinkedList mylist;
+    mylist.delete_node(2);
     mylist.insert_node(0, 5);
+    mylist.delete_node(0);
     mylist.append_node(1);
     mylist.append_node(2);
     mylist.append_node(5);
     mylist.insert_node(3, 2);
     mylist.insert_node(4, 3);
     mylist.insert_node(6, 20);
+    mylist.print_entire_list(mylist.get_list_head());
+    mylist.delete_node(0);
+    mylist.delete_node(1);
+    mylist.delete_node(2);
+    mylist.delete_node(50);
     mylist.print_entire_list(mylist.get_list_head());
     mylist.get_list_length();
     return 0;
