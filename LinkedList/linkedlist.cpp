@@ -16,7 +16,7 @@ LinkedList::LinkedList() {
 
 // Add a node to the end of the linked list
 void LinkedList::append_node(int data) {
-    Node* temp = new Node;          // Allocate space for the new node
+    Node *temp = new Node;          // Allocate space for the new node
     temp->nodeData = data;
     temp->nextNode = NULL;
 
@@ -62,14 +62,52 @@ void LinkedList::print_entire_list(Node *theHead) {
 
 
 // TODO create insert after certain node, delete certain node functions
+void LinkedList::insert_node(int data, int index) {
+    Node *newN = new Node;
+    newN->nodeData = data;
+    newN->nextNode = NULL;          // will be temporary
+
+    if(head == NULL) {              // if the list hasn't been initialized yet start it using this node and tell the user
+        head = newN;
+        tail = newN;
+        cout << "[Index Ignored Warning] - list started using this element as there were no other entries" << endl;
+    } else if(index == 0) {         // the node will replace / become the new head
+            newN->nextNode = head;
+            head = newN;
+    } else {
+        Node *current = head;
+        bool outsideRange = false;
+        for(int i = 1; i < index; ++i) {
+            if(current == NULL) {
+                outsideRange = true;
+                break;
+            }
+            current = current->nextNode;
+        }
+
+        if(outsideRange) {          // the index is outside the current list length; append the node to the end and tell the user
+            cout << "[Index Ignored Warning] - list was appended to using this element due to less entries than expected" << endl;
+            this->append_node(data);
+        } else {                    // the index is within the current list; insert after the node that has been iterated to
+            newN->nextNode = current->nextNode;
+            current->nextNode = newN;
+        }
+
+    }
+        
+}
 
 
 // Linked List class implementation example with creation, insertion, deletion, and printing functionality
 int main() {
     LinkedList mylist;
+    mylist.insert_node(0, 5);
     mylist.append_node(1);
     mylist.append_node(2);
     mylist.append_node(5);
+    mylist.insert_node(3, 2);
+    mylist.insert_node(4, 3);
+    mylist.insert_node(6, 20);
     mylist.print_entire_list(mylist.get_list_head());
     mylist.get_list_length();
     return 0;

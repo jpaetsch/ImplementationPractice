@@ -23,6 +23,7 @@ class LinkedList {
         void append_node(int data);
         void get_list_length();
         Node* get_list_head();
+        void insert_node(int data, int index);
 };
 
 
