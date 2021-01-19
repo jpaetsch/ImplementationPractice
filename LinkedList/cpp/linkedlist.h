@@ -19,6 +19,7 @@ class LinkedList {
         Node *head, *tail;
     public:
         LinkedList();
+        ~LinkedList();
         void print_entire_list(Node *theHead);
         void append_node(int data);
         void get_list_length();

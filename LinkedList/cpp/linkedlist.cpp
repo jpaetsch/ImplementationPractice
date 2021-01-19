@@ -14,6 +14,20 @@ LinkedList::LinkedList() {
 }
 
 
+// Destructor for the linked list
+// Delete nodes from head to tail
+LinkedList::~LinkedList() {
+    Node *current = head;
+    Node *next;
+
+    while(current != NULL) {
+        next = current->nextNode;
+        delete current;
+        current = next;
+    }
+}
+
+
 // Add a node to the end of the linked list
 void LinkedList::append_node(int data) {
     Node *temp = new Node;          // Allocate space for the new node
