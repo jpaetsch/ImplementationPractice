@@ -1,5 +1,11 @@
 // Linked List With Insert & Delete Implementation Practice
 
+// Potential Improvements Include:
+// 1) Handling of indexes feels kinda odd right now
+// 2) Track the range tracking better; maybe implement a built-in length variable for easier and increment
+//    or decrement based on when nodes are added or deleted
+// 3) Add a search by value, delete by value functions
+// 4) Could make it a cylindrical or double-linked list; plenty of additions can be made for improvement
 
 #include "linkedlist.h"
 

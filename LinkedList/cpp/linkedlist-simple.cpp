@@ -1,5 +1,9 @@
 // Simple Linked List Implementation Practice
 
+// Potential Improvements Include:
+// 1) Honestly just delete this implementation version; extremely basic and very little 
+//    functionality (see linkedlist.cpp for improvement)
+
 
 #include "linkedlist-simple.h"
 
