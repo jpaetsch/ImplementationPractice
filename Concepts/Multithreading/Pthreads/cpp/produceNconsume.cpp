@@ -2,7 +2,7 @@
 Adapted from a school assignment - the question was a classic producer-consumer multithreading problem;
 In this case it was a single producer thread and a dynamic number of consumer threads.
 
-Program usage:  ./produceNconsume <consumer-thread-number> <optional-logfile-number>
+Program usage:  ./produceNconsume <consumer-thread-number> [logfile-number]
 
 A file can be passed in; see my test.txt / test2.txt as examples of how it should be formatted.
 Otherwise, commandline input is read in until ctrl+d indicates end of user input.  'T' indicates work to be
@@ -14,7 +14,7 @@ Tried to keep synchronization to a minimum within original specifications to kee
 to address potential edge cases, particularly with unexpected input.
 
 The result of the program is a  printing to logfile which may have a given number by way of an optional
-commandline argument (either produceNconsume.log or produceNconsume.<#>.log).  This logfile keeps a logical record 
+commandline argument (either produceNconsume.log or produceNconsume.<logfile-number>.log).  This logfile keeps a logical record 
 of the threads' states / processes as time passes.  Threads specified by an id > 0 ask for work, receive it, work
 on it, complete it, and keep cycling.  The producer thread with id = 0 provides work and sleeps.  In addition, the
 actions are timestamped to show interleavings and a Queue limits the amount of work that can be held by the
