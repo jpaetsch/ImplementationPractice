@@ -1,6 +1,8 @@
 CC = g++ -std=c++17
 CFLAGS = -O
 
+.PHONY all clean debug
+
 all: linkedlist-simple linkedlist
 
 debug: CFLAGS = -g -Wall -Wextra
