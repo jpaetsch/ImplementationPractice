@@ -22,7 +22,10 @@ This project is created with:
 * pthreads (POSIX thread libraries)
 
 ## Inspiration
-
+Multi-threading and multi-threaded programs are an important concept; trying to practice using
+the POSIX threads library for practical applications.
 
 ## Sources
-
+Originally a school assignment but heavily modified since:
+* IO.c, IO.h, and timer.h files were provided and are mostly unmodified
+* Worked with partner Braden Stolte [@b-stolte](https://github.com/b-stolte)
