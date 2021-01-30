@@ -33,7 +33,8 @@ Potential improvements for my code include:
 5)  Better timing/clock implementation
 6)  Create more functions and particularly rethink the implementation of the consumer; very bloated
     and both sections have a lot of repeating code that could be reduced
-
+7)  REDO USING SEMAPHORES - could make it (especially the queue) far more efficient through the use of semaphores
+    instead of mutexes
 */
 
 
