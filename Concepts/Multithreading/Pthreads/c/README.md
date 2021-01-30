@@ -23,7 +23,7 @@ This project is created with:
 
 ## Inspiration
 Multi-threading and multi-threaded programs are an important concept; trying to practice using
-the POSIX threads library for practical applications.
+the POSIX threads library and apply it in a useful scenario (simple parallel computation).
 
 ## Sources
 Originally a school assignment but heavily modified since:
