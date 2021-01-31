@@ -12,9 +12,9 @@ Two different executable versions demonstrating linked list.  Simple linked list
 linked list is more comprehensive and provides more functionality.
 
 ## Setup & Usage
-'make' - Compiles two different executables; one for each implementation\
-'./linkedlist' OR './linkedlist-simple' - Execute either version\
-In addition, there are 'make clean' and 'make debug' targets
+'''make''' - Compiles two different executables; one for each implementation\
+'''./linkedlist''' OR '''./linkedlist-simple''' - Execute either version\
+In addition, there are '''make clean''' and '''make debug''' targets
 
 
 ## Potential Improvements
