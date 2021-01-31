@@ -18,21 +18,16 @@ python linkedlist.py
 
 ## Potential Improvements
 A number of potential improvements including:
-* Cleaning/tightening up of some of the functions especially ```python
-reverse_this_list(self)
-```
+* Cleaning/tightening up of some of the functions especially the list reversal function
 * Add a tail node to take better care of edge cases (would also help with the above improvement)
 * Increase number of operations including a node insertion one
-* Override ```python
-__str__()
-```
-instead of having the current print function
+* Override __str__() instead of having the current print function
 * More/better test cases
 
 ## Technologies
 This project is created with:
 * Python (version 3.8.0)
-* pyenv-virtualenv extension for virtual environment management\
+* pyenv-virtualenv extension for virtual environment management
 Note for setting up auto-activating Python virtualenv:\
 Set up a new named, versioned virtualenv:
 ```
