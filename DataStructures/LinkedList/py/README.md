@@ -18,14 +18,12 @@ python linkedlist.py
 
 ## Potential Improvements
 A number of potential improvements including:
-* Cleaning/tightening up of some of the functions especially 
-```python
+* Cleaning/tightening up of some of the functions especially ```python
 reverse_this_list(self)
 ```
 * Add a tail node to take better care of edge cases (would also help with the above improvement)
 * Increase number of operations including a node insertion one
-* Override 
-```python
+* Override ```python
 __str__()
 ```
 instead of having the current print function
