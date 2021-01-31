@@ -12,10 +12,19 @@ Two different executable versions demonstrating linked list.  Simple linked list
 linked list is more comprehensive and provides more functionality.
 
 ## Setup & Usage
-'''make''' - Compiles two different executables; one for each implementation\
-'''./linkedlist''' OR '''./linkedlist-simple''' - Execute either version\
-In addition, there are '''make clean''' and '''make debug''' targets
-
+Compile two different executables; one for each implementation:
+```
+make
+```
+Execute either version:
+```
+./linkedlist
+```
+OR
+```
+./linkedlist-simple
+```
+In addition, there are clean and debug targets for the Makefile
 
 ## Potential Improvements
 The simple linked list is not very functionally useful although it provides a basic implementation of this data structure.\
@@ -32,4 +41,4 @@ This project is created with:
 Linked lists are an essential data structure to know and understand and have many potential use cases.
 
 ## Sources
-Looked at various online sources if I got stuck with a particular operation but programmed it from scratch.
+* Looked at various online sources if I got stuck with a particular operation but programmed it from scratch.
