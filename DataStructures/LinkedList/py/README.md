@@ -15,6 +15,15 @@ Run the program:
 ```
 python linkedlist.py
 ```
+Note for setting up auto-activating Python virtualenv I used the following steps.\
+Set up a new named, versioned virtualenv:
+```
+pyenv virtualenv <version> <name>
+```
+Set the current directory to automatically activate this shell:
+```
+pyenv local <name>
+```
 
 ## Potential Improvements
 A number of potential improvements including:
@@ -28,15 +37,6 @@ A number of potential improvements including:
 This project is created with:
 * Python (version 3.8.0)
 * pyenv-virtualenv extension for virtual environment management
-Note for setting up auto-activating Python virtualenv:\
-Set up a new named, versioned virtualenv:
-```
-pyenv virtualenv <version> <name>
-```
-Set the current directory to automatically activate this shell:
-```
-pyenv local <name>
-```
 
 ## Inspiration
 Double linked list adds additional functionality - also before now Python has mainly been a scripting or jupyter notebooks machine learning language for me so working with classes instead is good practice.
