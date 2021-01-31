@@ -11,23 +11,23 @@
 A class based double linked list implementation with good starting functionality.
 
 ## Setup & Usage
-'''
+Run the program:
+```
 python linkedlist.py
-'''
-- Run the program
+```
 
 ## Potential Improvements
 A number of potential improvements including:
 * Cleaning/tightening up of some of the functions especially 
-'''python
+```python
 reverse_this_list(self)
-'''
+```
 * Add a tail node to take better care of edge cases (would also help with the above improvement)
 * Increase number of operations including a node insertion one
 * Override 
-'''python
+```python
 __str__()
-'''
+```
 instead of having the current print function
 * More/better test cases
 
@@ -37,17 +37,17 @@ This project is created with:
 * pyenv-virtualenv extension for virtual environment management\
 Note for setting up auto-activating Python virtualenv:\
 Set up a new named, versioned virtualenv:
-'''
+```
 pyenv virtualenv <version> <name>
-'''
+```
 Set the current directory to automatically activate this shell:
-'''
+```
 pyenv local <name>
-'''
+```
 
 ## Inspiration
 Double linked list adds additional functionality - also before now Python has mainly been a scripting or jupyter notebooks machine learning language for me so working with classes instead is good practice.
 
 ## Sources
- * Looked at various online sources if I got stuck with a particular operation but programmed it from scratch.\
+ * Looked at various online sources if I got stuck with a particular operation but programmed it from scratch.
 * [Website for pyenv & virtualenv setup](https://towardsdatascience.com/managing-virtual-environment-with-pyenv-ae6f3fb835f8)
