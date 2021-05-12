@@ -8,7 +8,7 @@
 * [Sources](#sources)
 
 ## Summary
-A code repository for mini-projects, personal examples, and my implementations for a variety of data structures, algorithms,
+A code repository for mini-projects, personal examples, and my implementations for a variety of data structures, algorithms, online programming puzzles, 
 and other coding concepts.
 
 ## Setup & Usage

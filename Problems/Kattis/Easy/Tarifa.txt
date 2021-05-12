@@ -1,0 +1,3 @@
+Use a range for loop to calculate the data remainder after each month and sum it.
+
+Add the default data amount for the new month at the end.

@@ -20,7 +20,7 @@ Set up a new named, versioned virtualenv:
 ```
 pyenv virtualenv <version> <name>
 ```
-Set the current directory to automatically activate this shell:
+As an aside, you can let the current directory automatically activate this shell if following the setup guide from the pyenv documentation:
 ```
 pyenv local <name>
 ```
@@ -35,7 +35,7 @@ A number of potential improvements including:
 
 ## Technologies
 This project is created with:
-* Python (version 3.8.0)
+* Python (version 3.8.2)
 * pyenv-virtualenv extension for virtual environment management
 
 ## Inspiration

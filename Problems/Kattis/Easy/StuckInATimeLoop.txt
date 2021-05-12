@@ -1,0 +1,1 @@
+Basic for loop with start, end defined (step left with default value).

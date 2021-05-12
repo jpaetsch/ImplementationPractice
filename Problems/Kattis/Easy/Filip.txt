@@ -1,0 +1,1 @@
+Good practice for string flipping (note that .reverse() function is for lists only)
