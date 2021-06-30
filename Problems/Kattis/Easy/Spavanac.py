@@ -2,7 +2,8 @@ inputNums = input().split()
 hourNum = int(inputNums[0])
 minNum = int(inputNums[1])
 
-# first subtract minutes
+# first subtract minutes, then take care of edge cases for the clock
+# flipping over in 24 hour format
 
 if(minNum - 45 < 0):
     minNum = (minNum - 45) + 60

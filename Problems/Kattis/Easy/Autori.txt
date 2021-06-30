@@ -1,1 +1,0 @@
-Split input along the hyphen delimiter and append the first letter of each name into the output string.

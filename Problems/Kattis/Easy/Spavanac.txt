@@ -1,1 +1,0 @@
-Convert between types and take care of several cases when the clock needs to switch over in 24 hour style format.

@@ -1,1 +1,0 @@
-Use mod to check the remainder as two stones are taken each time.
