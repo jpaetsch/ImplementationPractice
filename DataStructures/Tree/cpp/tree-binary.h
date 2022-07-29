@@ -15,14 +15,19 @@ struct Node {
 
 
 class BinaryTree {
-    private:
-        Node *root;
     public:
         BinaryTree();
         ~BinaryTree();
 
-        Node *search_for(int data);
-        void insert_node(int data);
+        Node *search(int data);
+        void insert(int data);
+        void destroy_tree();
+    
+    private:
+        void destroy_tree(Node *leaf);
+        void insert(int data, Node *leaf);
+        Node *search(int data, Node *leaf);
+        Node *root;
 };
 
 
